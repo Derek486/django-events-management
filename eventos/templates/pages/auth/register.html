@@ -8,7 +8,7 @@
 
 {% block content %}
     <div class="row d-flex flex-column">
-        <form action="{% url 'eventos.register' %}" method="post" class="card md-col-4 sm-col-6 col-4 mx-auto mt-5">
+        <form action="{% url 'eventos.register' %}" method="post" class="card col-sm-6 col-md-4 mx-auto mt-5">
             {% csrf_token %}
             <div class="mb-3">
                 <label for="username" class="form-label">Nombre de Usuario</label>
@@ -49,7 +49,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Ingresar</button>
         </form>
-        <div class="md-col-4 sm-col-6 col-4 d-flex gap-2 align-items-center mx-auto mt-4 justify-content-center">
+        <div class="col-sm-6 col-md-4 d-flex gap-2 align-items-center mx-auto mt-4 justify-content-center">
             <p class="m-0 fs-6">¿ Ya tienes una cuenta ?</p>
             <a href="{% url 'eventos.login' %}">Iniciar sesion</a>
         </div>
